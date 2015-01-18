@@ -27,6 +27,7 @@
 
 @interface REBoolItem : RETableViewItem
 
+@property (strong, nonatomic) UIColor *onTintColor;
 @property (assign, readwrite, nonatomic) BOOL value;
 @property (copy, readwrite, nonatomic) void (^switchValueChangeHandler)(REBoolItem *item);
 
