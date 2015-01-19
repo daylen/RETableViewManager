@@ -28,6 +28,9 @@
 
 @interface REDateTimeItem : RETableViewItem
 
+@property (strong, nonatomic) UIColor *selectedColor;
+@property (strong, nonatomic) UIColor *unselectedColor;
+
 @property (strong, readwrite, nonatomic) NSDate *value;
 @property (strong, readwrite, nonatomic) NSDate *pickerStartDate;         // date to be used for the picker when the value is not set; defaults to current date when not specified
 @property (copy, readwrite, nonatomic) NSString *placeholder;
